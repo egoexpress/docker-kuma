@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  app:
+    image: louislam/uptime-kuma:1-debian
+    restart: always
+    volumes:
+      - data:/app/data
+    network_mode: "host"
+
+volumes:
+  data:
+
