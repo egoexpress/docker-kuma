@@ -5,7 +5,11 @@ services:
     volumes:
       - data:/app/data
     network_mode: "host"
+    environment:
+      - VIRTUAL_HOST=${VIRTUAL_HOST}
+      - LETSENCRYPT_HOST=${LETSENCRYPT_HOST}
+      - LETSENCRYPT_EMAIL=${LETSENCRYPT_EMAIL}
+      - VIRTUAL_PORT=3001
 
 volumes:
   data:
-
