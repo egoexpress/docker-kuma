@@ -1,6 +1,6 @@
 services:
   app:
-    image: louislam/uptime-kuma:1-debian
+    image: louislam/uptime-kuma:1.23.16-debian
     restart: always
     volumes:
       - data:/app/data
