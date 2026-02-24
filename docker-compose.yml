@@ -4,7 +4,6 @@ services:
     restart: always
     volumes:
       - data:/app/data
-    network_mode: "host"
     environment:
       - VIRTUAL_HOST=${VIRTUAL_HOST}
       - LETSENCRYPT_HOST=${LETSENCRYPT_HOST}
