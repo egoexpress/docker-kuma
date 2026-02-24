@@ -13,3 +13,8 @@ services:
 
 volumes:
   data:
+
+networks:
+  frontend:
+    name: proxy_frontend
+    external: true
