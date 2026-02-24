@@ -4,8 +4,8 @@ services:
     restart: always
     volumes:
       - data:/app/data
-    ports:
-      - 3001:3001      
+    networks:
+      - frontend  
     environment:
       - VIRTUAL_HOST=${VIRTUAL_HOST}
       - LETSENCRYPT_HOST=${LETSENCRYPT_HOST}
