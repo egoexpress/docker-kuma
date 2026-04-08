@@ -14,7 +14,7 @@ services:
       - VIRTUAL_PORT=3001
 
   tailscale:
-    image: tailscale/tailscale:v1.94
+    image: tailscale/tailscale:v1.96
     hostname: kuma
     restart: always
     environment:
